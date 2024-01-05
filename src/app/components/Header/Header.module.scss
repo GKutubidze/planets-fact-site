@@ -1,0 +1,77 @@
+.main {
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 16px 24px;
+  height: 36px;
+
+  p {
+    font-family: var(--font-antonio);
+    font-size: 28px;
+    font-weight: 400;
+    letter-spacing: -1.05px;
+    text-transform: uppercase;
+  }
+}
+.menu {
+  cursor: pointer;
+}
+.mainTablet {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+width: 100%;
+  p {
+    text-align: center;
+    color: #fff;
+    font-family: var(--font-antonio);
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -1.05px;
+    text-transform: uppercase;
+  }
+}
+.menucontainer {
+  display: flex;
+  justify-content: center;
+  gap: 33px;
+  margin: 39px 53px 26px 51px;
+
+  p {
+    color: #fff;
+    font-family: var(--font-spartan);
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 25px; /* 227.273% */
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  }
+}
+
+.link{
+  
+  all: unset;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 1024px) {
+   .mainTablet{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 40px;
+
+    
+   }
+   .menucontainer{
+    justify-content: space-between;
+    margin-right: 40px;
+    }
+   .planetTitle{
+    min-width: 109px;
+    margin-left: 32px;
+   }
+   
+ }

@@ -1,0 +1,41 @@
+.main {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+  min-height: 48px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  &:hover {
+    background-color: var(--dimGray);
+  }
+  &:active {
+    background-color: #419ebb;
+  }
+  cursor: pointer;
+}
+
+.value,
+.name {
+  color: #fff;
+  font-family: var(--font-spartan);
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 25px; /* 208.333% */
+  letter-spacing: 2.571px;
+  text-transform: uppercase;
+}
+.name {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.name {
+  margin-left: 28px;
+}
+
+@media screen and (min-width: 1024px) {
+
+    .main{
+        gap:28px;
+       
+    }
+}

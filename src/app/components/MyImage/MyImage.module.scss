@@ -1,0 +1,44 @@
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    // gap:-350px;
+    width: 60%;
+    height: 600px;
+    
+}
+.secondImage{
+    // margin-top: 150px;
+    position: relative;
+    top:-120px;
+    left: 5 0px;
+}
+
+.image,.secondImage{
+  
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+ 
+
+@media screen and (min-width: 768px) {
+   
+    .image {
+        width: 250px;
+        height: 250px;
+    }
+ 
+}
+@media screen and (min-width: 1024px) {
+   
+    .image {
+         width: 300px;
+        height: 300px;
+    }
+ 
+    // .image,.secondImage{
+    //     margin-left: 335px;
+    //     margin-right: 300px;
+    // }
+   }
