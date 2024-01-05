@@ -4,11 +4,10 @@ import data from "../../../public/data/data.json";
 import PlanetMenu from '../components/Menu/PlanetMenu';
 import styles from "./page.module.scss"
 import Link from 'next/link';
-
-const page = () => {
+ const page = () => {
   return (
    <div className={styles.main}>
-    <Header/>
+    <Header data={data}/>
     <div className={styles.container} >
       {Data.map((item,key)=>{
         return(
