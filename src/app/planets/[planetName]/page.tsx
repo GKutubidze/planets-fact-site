@@ -18,8 +18,9 @@ const PlanetInfo = ({ params }: any) => {
   const temp:(Planet |undefined)= data.find((item) => {
     return item.name.toLocaleLowerCase() === params.planetName.toLowerCase();
   });
-  const planet = temp?.images.planet.substring(1);
-
+  if (!temp) {
+    return <div>Planet not found</div>; // Handle case where planet is not found
+  }
   
   return (
     <div>
