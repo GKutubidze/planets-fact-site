@@ -11,7 +11,7 @@ import Link from 'next/link';
     <div className={styles.container} >
       {Data.map((item,key)=>{
         return(
-          <Link href={`http://localhost:3000/planets/${item.name}`} className={styles.link}>
+          <Link href={`/planets/${item.name}`} className={styles.link}>
           <PlanetMenu color={item.color} name={item.name} key={key} />
           </Link>
         ) 
