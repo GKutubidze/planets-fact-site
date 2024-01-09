@@ -15,12 +15,12 @@ const Header = (props:Props) => {
   const mobile = width >0 && width<768;
   const tablet = width >= 768 && width <= 1024;
   const desktop = width > 1024;
-
+  const URL=process.env.URL;
   if (mobile) {
     return (
       <div className={styles.main}>
         <p>THE PLANETS</p>
-        <Link href="http://localhost:3000/planets">
+        <Link href={`${URL}/planets`}>
           <Image src={menuIcon} alt="" className={styles.menu} />
         </Link>
       </div>
@@ -32,7 +32,7 @@ const Header = (props:Props) => {
       <div className={styles.menucontainer}>
          {data.map((item,key)=>{
           return (
-          <Link href={`http://localhost:3000/planets/${item.name}`} className={styles.link}><p key={key}>{item.name}</p></Link>
+          <Link href={`${URL}/planets/${item.name}`} className={styles.link}><p key={key}>{item.name}</p></Link>
           )
          })}
       </div>

@@ -3,18 +3,18 @@ import Header from "@/app/components/Header/Header"
 import Menu from "@/app/components/Menu/Menu"
 import React, { useState } from "react"
 import data from "../../../../public/data/data.json"
-import Image from "next/image"
 import InfoComponent from "@/app/components/Info/InfoComponent"
 import Characteristics from "@/app/components/Characteristics/Characteristics"
 import styles from "./page.module.scss"
 import { ContentType, Planet } from "@/app/interfaces";
 import MyImage from "@/app/components/MyImage/MyImage";
+import dynamic from 'next/dynamic';
 
 
 const PlanetInfo = ({ params }: any) => {
-  const [bodyContent, setBodyContent] = useState<ContentType >("overview");
   
 
+  const [bodyContent, setBodyContent] = useState<ContentType >("overview");
   const temp:(Planet |undefined)= data.find((item) => {
     return item.name.toLocaleLowerCase() === params.planetName.toLowerCase();
   });
