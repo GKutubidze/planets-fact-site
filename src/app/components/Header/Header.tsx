@@ -20,7 +20,7 @@ const Header = (props:Props) => {
     return (
       <div className={styles.main}>
         <p>THE PLANETS</p>
-        <Link href={`${URL}/planets`}>
+        <Link href={`/planets`}>
           <Image src={menuIcon} alt="" className={styles.menu} />
         </Link>
       </div>
@@ -32,7 +32,7 @@ const Header = (props:Props) => {
       <div className={styles.menucontainer}>
          {data.map((item,key)=>{
           return (
-          <Link href={`${URL}/planets/${item.name}`} className={styles.link}><p key={key}>{item.name}</p></Link>
+          <Link href={`/planets/${item.name}`} className={styles.link}><p key={key}>{item.name}</p></Link>
           )
          })}
       </div>
